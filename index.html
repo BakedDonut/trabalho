@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Atividade</title>
+
+        <style>
+            body {
+              background-color: #000000;
+            }
+            p, h1, h2, h3, h4, h5, li {
+                
+                color: #fff;
+            }
+            .botao{
+                background-color:#ff0000;
+                color: #fff;
+                text-decoration: none;
+                align-self: center;
+                text-align: center;
+                border-radius: 4px;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+                
+            }
+            .spoiler{
+                background-color:#ff0000;
+                color: #fff;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                height: 100%;
+                width: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .cor {
+                color:#000000
+            }
+        </style>
+      
+    </head>
+    <body>
+<header>
+    <h1>receita:</h1>
+    <h2>bolo de liquidificador</h2>
+</header>
+
+
+
+<div>
+    <div class="spoiler">
+    <div class="botao">
+            <button onclick='document.getElementsByClassName("botao")[0].innerHTML = "testado"' class="botao">teste bolo</button>
+        
+        </div>
+        <div class="botao">
+
+            <button onclick='CorCSS()'class="botao"> cor</button>
+
+
+        </div>
+        
+            <a class="  
+            botao" href="https://receitas.globo.com/tipos-de-prato/bolos/bolo-facil-de-liquidificador-524b51764d38852aba00004c.ghtml">veja a receita do bolo</a>
+    
+
+
+</div>
+        
+
+
+
+    </body>
+    <script>
+        
+        
+
+        function CorCSS(){
+
+            const items = document.querySelectorAll(".botao");
+
+            items.forEach((item) => {
+                item.classList.add("cor");
+            });
+        }
+    </script>
+
+
+    </html>
